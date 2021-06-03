@@ -18,7 +18,7 @@ const NavBar = () => {
             <NavLinks to='nossotime'>
               Nosso Time
             </NavLinks>
-            <NavLinks to='#'>
+            <NavLinks to='contato'>
               Contato
             </NavLinks>
           </NavMenu>
