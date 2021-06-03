@@ -3,17 +3,18 @@ import { BrowserRouter, Link, Route, Switch } from 'react-router-dom'
 import DrinksPop from '../../componentes/DrinksPop'
 import DrinksSearch from '../../componentes/DrinksSearch'
 import NavBar from '../../componentes/Nav'
+import { Container } from './style'
 
 const Drinks = () => {
     return (
         <div>
             <NavBar />
             <BrowserRouter>
-                <div>
+                <Container>
                     <h1>Drinks</h1>
-                    <Link to="/drinks/drinksPop">Drinks populares</Link>
-                    <Link to="/drinks/buscarDinks">Buscar Drinks</Link>
-                </div>
+                    <Link to="/drinks/drinksPop"><p>Drinks populares</p></Link>
+                    <Link to="/drinks/buscarDinks"><p>Buscar Drinks</p></Link>
+                </Container>
                 <Switch> 
                     <Route exact path="/drinks/drinkspop" component={DrinksPop} />  
                     <Route exact path="/drinks/buscarDinks" component={DrinksSearch} />  

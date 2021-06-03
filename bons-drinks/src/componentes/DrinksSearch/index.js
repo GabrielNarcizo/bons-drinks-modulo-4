@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 import DrinksPop from '../DrinksPop'
+import { Container } from './style'
 
-const DrinksSearch = () => {
+const DrinksSearch = (props) => {
     const [value, setValue] = useState("");
 
     return (
-        <div>
-            <input type='text' onChange={(event) => setValue(event.target.value)}/>
+        <Container>
+            <input type={'text'} onChange={(event) => setValue(event.target.value)}/>
             <button onClick={async () =>{
                 const response = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${value}`)
-                console.log(response.drinks)
+                const data = response.json()
+                setValue(data)
             }}>Buscar</button>
-            <DrinksPop />
-        </div>
+        </Container>
     )
 }
 
