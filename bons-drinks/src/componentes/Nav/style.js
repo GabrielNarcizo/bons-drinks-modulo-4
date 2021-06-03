@@ -15,7 +15,7 @@ export const NavMenu = styled.div`
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 `;
 
-export const NavLink = styled(Link)`
+export const NavLinks = styled(Link)`
   color: #fff;
   display: flex;
   justify-content: space-around;

@@ -5,7 +5,6 @@ export const FooterContainer = styled.footer`
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 0;
     height: 60px;
     background-color: #000;
     font-family: 'Dancing Script', cursive;

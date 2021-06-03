@@ -1,26 +1,26 @@
 import React from 'react'
-import { Nav, NavLink, NavMenu } from './style';
+import { Nav, NavLinks, NavMenu } from './style';
 
 const NavBar = () => {
     return (
         <>
         <Nav>
           <NavMenu>
-            <NavLink to='#'>
+            <NavLinks to='drinks'>
               Drinks
-            </NavLink>
-            <NavLink to='#'>
+            </NavLinks>
+            <NavLinks to='#'>
               Sobre Nós
-            </NavLink>
-            <NavLink exact to='/'>
+            </NavLinks>
+            <NavLinks exact to='/'>
               BôBeber
-            </NavLink>
-            <NavLink to='#'>
+            </NavLinks>
+            <NavLinks to='#'>
               Nosso Time
-            </NavLink>
-            <NavLink to='#'>
+            </NavLinks>
+            <NavLinks to='#'>
               Contato
-            </NavLink>
+            </NavLinks>
           </NavMenu>
         </Nav>
         </>
