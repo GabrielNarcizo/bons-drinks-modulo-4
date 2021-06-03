@@ -9,7 +9,7 @@ const NavBar = () => {
             <NavLinks to='drinks'>
               Drinks
             </NavLinks>
-            <NavLinks to='#'>
+            <NavLinks to='sobrenos'>
               Sobre Nós
             </NavLinks>
             <NavLinks exact to='/'>

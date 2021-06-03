@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import NavBar from '../Nav';
 import Footer from '../Footer'
 import { Container, ContainerWrapper, DrinksCard } from './style';
 
