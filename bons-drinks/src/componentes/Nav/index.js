@@ -15,7 +15,7 @@ const NavBar = () => {
             <NavLinks exact to='/'>
               BôBeber
             </NavLinks>
-            <NavLinks to='#'>
+            <NavLinks to='nossotime'>
               Nosso Time
             </NavLinks>
             <NavLinks to='#'>

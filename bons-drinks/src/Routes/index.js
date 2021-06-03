@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router'
 import AboutUs from '../pages/AboutUs'
 import Drinks from '../pages/Drinks'
 import Home from '../pages/Home'
+import OurTime from '../pages/OurTime'
 
 const Routes = () => {
     return (
@@ -15,6 +16,9 @@ const Routes = () => {
         </Route>
         <Route path="/sobrenos">
             <AboutUs />
+        </Route>
+        <Route path="/nossotime">
+            <OurTime />
         </Route>
     </Switch>
     )

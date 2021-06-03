@@ -11,6 +11,7 @@ export const AboutUsWrapper = styled.div `
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     height: 70vh;
+
     margin-top: 20px;
 
     img{
