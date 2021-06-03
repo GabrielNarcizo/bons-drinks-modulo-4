@@ -1,20 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import DrinksPop from '../DrinksPop'
 
 const DrinksSearch = () => {
-    const [value, setValue] = useState();
+    const [value, setValue] = useState("");
+
     return (
         <div>
-            <select type={'text'} name="nome" onChange={(event) => setValue(event.target.value)}>
-                <option value="Alcoolico">Alcoolico</option>
-                <option value="Categoria">Categoria</option>
-                <option value="Copo">Copo</option>
-            </select>
-            <button onClick={async (event) =>{
-                const response = await fetch(`www.thecocktaildb.com/api/json/v1/1/filter.php?a=${event.target.value}`)
-                const data = await response.json()
-                setValue(data)
+            <input type='text' onChange={(event) => setValue(event.target.value)}/>
+            <button onClick={async () =>{
+                const response = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${value}`)
+                console.log(response.drinks)
             }}>Buscar</button>
-            
+            <DrinksPop />
         </div>
     )
 }

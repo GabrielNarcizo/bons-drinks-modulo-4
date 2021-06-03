@@ -1,17 +1,17 @@
 import { useEffect, useState } from 'react'
 
 const useFetch = () => {
-    const [drinks, setDrinks] = useState([])
+    const [value, setValue] = useState();
 
     useEffect(() =>{
-        const getDrinks = async () => {
-            const response = await fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php');
+        const searchDrinks = async () => {
+            const response = await fetch(`https:/www.thecocktaildb.com/api/json/v1/1/search.php?s=${value}`);
             const data = await response.json()
-            setDrinks(data.drinks)
+            setValue(data.drinks)
         }
-        getDrinks()
-    },[])
-    return drinks
+        searchDrinks()
+    },[value])
+    return value;
 }
 
 export default useFetch;
