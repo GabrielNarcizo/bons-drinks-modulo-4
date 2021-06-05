@@ -1,5 +1,5 @@
 import React from 'react'
-import { Imagem } from './style'
+import { Imagem } from './Main.style'
 
 
 const Main = () => {

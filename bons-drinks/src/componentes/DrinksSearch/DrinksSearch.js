@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import DrinksPop from '../DrinksPop'
-import { Container } from './style'
+import { Container } from './DrinksSearch.style'
 
 const DrinksSearch = (props) => {
     const [value, setValue] = useState("");

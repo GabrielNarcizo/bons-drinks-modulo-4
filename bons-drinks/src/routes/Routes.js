@@ -1,10 +1,10 @@
 import React from 'react'
 import { Route, Switch } from 'react-router'
-import AboutUs from '../pages/AboutUs'
-import Contact from '../pages/Contact'
-import Drinks from '../pages/Drinks'
+import AboutUs from '../pages/AboutUs/AboutUs'
+import Contact from '../pages/Contact/Contact'
+import Drinks from '../pages/Drinks/Drinks'
 import Home from '../pages/Home'
-import OurTime from '../pages/OurTime'
+import OurTime from '../pages/OurTime/OurTime'
 
 const Routes = () => {
     return (

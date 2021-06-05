@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Footer from '../Footer'
-import { Container, ContainerWrapper, DrinksCard } from './style';
+import Footer from '../Footer/Footer'
+import { Container, ContainerWrapper, DrinksCard } from './DrinksPop.style';
 
 const DrinksPop = () => {
     const [drinks, setDrinks] = useState([])

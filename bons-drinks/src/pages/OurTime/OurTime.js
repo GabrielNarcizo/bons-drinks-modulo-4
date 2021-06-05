@@ -1,8 +1,8 @@
 import React from 'react'
-import { Container } from '../AboutUs/style'
-import { OurTimeWrapper } from './style'
-import NavBar from '../../componentes/Nav'
-import Footer from '../../componentes/Footer'
+import { Container } from '../AboutUs/AboutUs.style'
+import { OurTimeWrapper } from './OurTime.style'
+import NavBar from '../../componentes/Nav/NavBar'
+import Footer from '../../componentes/Footer/Footer'
 
 const OurTime = () => {
     return (

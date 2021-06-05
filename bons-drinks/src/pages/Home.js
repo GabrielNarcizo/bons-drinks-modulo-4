@@ -1,7 +1,7 @@
 import React from 'react'
-import NavBar from '../componentes/Nav'
-import Main from '../componentes/Main';
-import Footer from '../componentes/Footer';
+import NavBar from '../componentes/Nav/NavBar'
+import Main from '../componentes/Main/Main';
+import Footer from '../componentes/Footer/Footer';
 
 const App = () => {
   return (

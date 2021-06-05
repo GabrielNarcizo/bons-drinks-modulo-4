@@ -1,8 +1,8 @@
 import React from 'react'
-import { Container } from '../../componentes/DrinksPop/style'
-import Footer from '../../componentes/Footer'
-import NavBar from '../../componentes/Nav'
-import { AboutUsWrapper } from './style'
+import { Container } from '../../componentes/DrinksPop/DrinksPop.style'
+import Footer from '../../componentes/Footer/Footer'
+import NavBar from '../../componentes/Nav/NavBar'
+import { AboutUsWrapper } from './AboutUs.style'
 
 const AboutUs = () => {
     return (

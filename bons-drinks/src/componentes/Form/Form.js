@@ -1,5 +1,5 @@
 import React from 'react'
-import { FormDiv } from './style'
+import { FormDiv } from './Form.style'
 
 const Form = () => {
     return (
